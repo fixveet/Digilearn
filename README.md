@@ -18,7 +18,7 @@ DiGi adalah platform pembelajaran pemrograman yang dirancang untuk membawa anak-
 
 ## Kontribusi
 
-Kami sangat menyambut kontribusi dalam pengembangan DiGi. Jika Anda ingin berkontribusi atau melaporkan masalah, silakan buka [GitHub Repository](link_repository).
+Kami sangat menyambut kontribusi dalam pengembangan DiGi. Jika Anda ingin berkontribusi atau melaporkan masalah, silakan buka ---.
 
 ## Tim
 
@@ -26,8 +26,4 @@ DiGi didirikan oleh tiga mahasiswa informatika yang bersemangat tentang membantu
 
 ## Kontak
 
-Jika Anda memiliki pertanyaan atau butuh dukungan, Anda dapat menghubungi kami melalui email di [email@digiprogramming.com](mailto:email@digiprogramming.com).
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [Lisensi MIT](link_lisensi).
+Jika Anda memiliki pertanyaan atau butuh dukungan, Anda dapat menghubungi kami melalui email di [novitanggraini90@gmail.com](mailto:novitanggraini90@gmail.com).
