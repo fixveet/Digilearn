@@ -12,7 +12,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Responsive Navbar</title>
+    <!--BOXICON-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <title>Digi Learn</title>
   </head>
   <body>
     <!--https://colorhunt.co/palette/1320431f4172f1b4bbfdf0f0-->
@@ -41,6 +46,28 @@
       </div>
     </header>
     <main>
+      <!--Chat Bot Start-->
+      <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <div class="headers">
+          <h2>DiGi</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </div>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br />How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Sakura wasn't ready because she's shy" spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+      <!--Chat Bot End-->
       <section id="hero">
         <img src="./assets/images/hero.png" alt="Coding Bro" />
         <div class="hero-text">
@@ -62,17 +89,6 @@
     </main>
     -->
 
-    <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDwonMenu = document.querySelector(".dropdown_menu");
-
-      toggleBtn.onclick = function () {
-        dropDwonMenu.classList.toggle("open");
-        const isOpen = dropDwonMenu.classList.contains("open");
-
-        toggleBtnIcon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
-      };
-    </script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
