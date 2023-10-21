@@ -59,12 +59,15 @@ header {
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2 ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.action_btn:hover {
+.action_btn:hover,
+#hero .action_btn:hover {
   scale: 1.05;
   color: #fdf0f0;
 }
-.action_btn:active {
+.action_btn:active,
+#hero .action_btn:active {
   scale: 0.95;
 }
 .dropdown_menu {
@@ -95,7 +98,7 @@ header {
   justify-content: center;
 }
 /*Hero*/
-section#hero {
+/*section#hero {
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
@@ -106,7 +109,36 @@ section#hero {
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}*/
+section#hero {
+  height: 600px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
+section#hero img {
+  width: 100%;
+  height: 600px;
+}
+section#hero .hero-text {
+  width: 80%;
+  justify-content: center;
+}
+section#hero .hero-text h1 {
+  font-size: 3.3rem;
+  margin-bottom: 12px;
+  color: #132043;
+}
+section#hero .hero-text p {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
 /*Responsive*/
 @media (max-width: 992px) {
   .navbar .links,
@@ -119,10 +151,24 @@ section#hero {
   .dropdown_menu {
     display: block;
   }
+  section#hero {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  section#hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  section#hero .hero-text h1 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
+  }
+  section#hero .hero-text h1 {
+    font-size: 2rem;
   }
 }
