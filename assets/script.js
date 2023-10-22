@@ -6,7 +6,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null;
-//const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -79,3 +79,30 @@ chatInput.addEventListener("keydown", (e) => {
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+//partners
+$(document).ready(function () {
+  $(".customer-logos").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        setting: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 520,
+        setting: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+  });
+});
